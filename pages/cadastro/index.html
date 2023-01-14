@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../style/globalStyles.css">
+  <link rel="stylesheet" href="../../style/reset.css">
+  <link rel="stylesheet" href="../../style/fonts.css">
+  <link rel="stylesheet" href="../../style/inputs.css">
+  <link rel="stylesheet" href="../../style/buttons.css">
+  <link rel="stylesheet" href="../../style/header.css">
+  <link rel="stylesheet" href="../../style/animation.css">
+  <link rel="stylesheet" href="../../style/toast.css">
+
+  <link rel="stylesheet" href="index.css">
+
+  <script defer src="../../script/menu.js"></script>
+
+  <link rel="shortcut icon" href="../../img/bolinha.png" type="image/x-icon">
+
+  <title>Kenzie Empresas - Cadastro</title>
+</head>
+<body class="appear-X" >
+  
+  <header>
+    <div class="container">
+      <div class="logo">
+        <div class="ball"></div>   
+        <img src="../../img/Kenzie Empresas.svg" alt="Logo Kenzie Empresas">
+      </div>
+      <div class="menu">
+        <img src="../../img/menu-hamburguer.svg" alt="menu" id="menuHamburguer">
+        <div class="menu_hamburguer">
+          <button type="button" id="lgn" class="btn-blue1 font-bold">Login</button>
+          <button type="button" id="cdtro" class="btn-blue2 font-bold">Cadastro</button>
+        </div>
+      </div>
+    </div>
+  
+  </header>
+
+  <main>
+    <div class="div_img">
+      <div id="form-cadastro">
+          <h1 class="font-bold font-Poppins">Cadastre-se</h1>
+          <form>
+            <input type="text" placeholder="Seu nome" id="username" required>
+            <input type="text" placeholder="Seu e-mail" id="email" required>
+            <input type="password" placeholder="Sua senha" id="password" required>
+            <select name="lvlProffi" id="professional_level" title="Nível de Profissão">
+              <option value="null">Nivel Profissional</option>
+              <option value="estágio">Estágio</option>
+              <option value="júnior">Junior</option>
+              <option value="pleno">Pleno</option>
+              <option value="sênior">Senior</option>
+            </select>
+            <div>
+              <button type="button" class="btn-blue2 font-bold" id="btnCadastrar">Cadastre-se</button>
+              <button type="button" class="btn-blue1 font-bold" id="btnRetornar">Retornar</button>
+            </div>
+          </form>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="index.js"></script>
+</body>
+</html>

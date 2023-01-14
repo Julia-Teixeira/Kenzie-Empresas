@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../../style/globalStyles.css">
+  <link rel="stylesheet" href="../../style/reset.css">
+  <link rel="stylesheet" href="../../style/fonts.css">
+  <link rel="stylesheet" href="../../style/inputs.css">
+  <link rel="stylesheet" href="../../style/buttons.css">
+  <link rel="stylesheet" href="../../style/header.css">
+  <link rel="stylesheet" href="../../style/animation.css">
+  <link rel="stylesheet" href="../../style/modal.css">
+  <link rel="stylesheet" href="../../style/toast.css">
+  <link rel="shortcut icon" href="../../img/bolinha.png" type="image/x-icon">
+  <link rel="stylesheet" href="index.css">
+
+  <script defer src="../../script/menu.js"></script>
+  <script defer type="module" src="index.js"></script>
+  <title>Kenzie Empresas - Admin</title>
+</head>
+<body class="appear-X">
+  <header>
+    <div class="container">
+      <div class="logo">
+        <div class="ball"></div>   
+        <img src="../../img/Kenzie Empresas.svg" alt="Logo Kenzie Empresas">
+      </div>
+      <div class="menu">
+        <img src="../../img/menu-hamburguer.svg" alt="menu">
+        <div class="menu_hamburguer">
+          <button type="button" id="logout" class="btn-blue1 font-bold">Logout</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="container">
+      <div id="infoAdmin">
+        <div id="infoDepartamentos">
+      
+          <div id="head-infoDepartamentos">
+            <h2 class="font-bold">Departamentos</h2>
+            <select name="empresa" id="empresa" title="Seleciona Empresa">
+              <option value="null">Selecionar Empresa</option>
+            </select>
+            <button type="button" id="createDepartament" class="font-bold btn-blue2">Criar</button>
+          </div>
+
+          <div id="body-infoDepartamentos">
+            <ul id="listDepartments">
+                
+            </ul>
+          </div>
+        </div>
+
+        <div id="infoUsers">
+          <div id="head-infoUsers">
+            <h2 class="font-bold">Usuários Cadastrados</h2>
+          </div>
+
+          <div id="body-infoUsers">
+            <ul id="listUser">
+
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    
+  </main>
+</body>
+</html>

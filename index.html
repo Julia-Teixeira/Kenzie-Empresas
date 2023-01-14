@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style/globalStyles.css">
+  <link rel="stylesheet" href="style/reset.css">
+  <link rel="stylesheet" href="style/fonts.css">
+  <link rel="stylesheet" href="style/inputs.css">
+  <link rel="stylesheet" href="style/buttons.css">
+  <link rel="stylesheet" href="style/header.css">
+  <link rel="stylesheet" href="pages/home/index.css">
+
+  <link rel="shortcut icon" href="img/bolinha.png" type="image/x-icon">
+  <script defer src="script/menu.js"></script>
+
+  <title>Kenzie Empresas</title>
+</head>
+<body>
+  
+  <header>
+    <div class="container">
+      <div class="logo">
+        <div class="ball"></div>   
+        <img src="img/Kenzie Empresas.svg" alt="Logo Kenzie Empresas">
+      </div>
+      <div class="menu">
+        <img src="img/menu-hamburguer.svg" alt="menu" id="menuHamburguer">
+        <div class="menu_hamburguer">
+          <button type="button" id="lgn" class="btn-blue1 font-bold">Login</button>
+          <button type="button" id="cdtro" class="btn-blue2 font-bold">Cadastro</button>
+        </div>
+      </div>
+    </div>
+  
+  </header>
+
+  <main >
+    <div class="container">
+      <div class="div-princ ">
+        <div class="div-img">
+    
+        </div>
+        <section class="sec_empresas"> 
+          <select name="sectors" id="sectors" title="Setores" >
+            <option value="all">Selecionar setor</option>
+          </select>
+    
+          <ul class="empresas">
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="pages/home/index.js"></script>
+</body>
+</html>

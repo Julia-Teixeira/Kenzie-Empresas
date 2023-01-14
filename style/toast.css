@@ -1,0 +1,31 @@
+.toast {
+  width: 207px;
+  height: 68px;
+  color: var(--color-white);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 20px;
+  margin-top: 10px;
+  border-radius: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation: toastIt 2000ms ease-in forwards;
+}
+
+.sucess {
+  background-color: var(--color-green);
+}
+.error {
+  background-color: var(--color-red);
+}
+
+.toast p{
+  font-size: var(--size-14);
+  line-height: var(--height-16);
+  margin: 0 auto;
+  padding: 16px;
+}

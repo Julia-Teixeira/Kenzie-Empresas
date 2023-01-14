@@ -1,0 +1,90 @@
+@keyframes toastIt {
+  0%{right: 30px; top: -100px;}
+  25%{right: 30px; top: 10px;}
+  50%{right: 30px; top: 10px;}
+  100%{right: 30px; top: -150px;}
+}
+
+@keyframes fadeIn{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@keyframes fadeOut{
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+@keyframes appearY {
+  from{
+      transform: translateY(-150%);
+  }
+  to{
+      transform: translateY(0);
+  }
+}
+@keyframes desappearY {
+  from{
+      transform: translateY(0);
+  }
+  to{
+      transform: translateY(-200%);
+  }
+}
+@keyframes aniRotate{ 
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.fadeIn{
+  animation: fadeIn 1.5s linear;
+}
+.fadeOut{
+  animation: fadeOut 1.5s linear;
+  animation-fill-mode: forwards;
+}
+.appear-X{
+  animation: 0.75s fadeIn linear forwards;
+}
+.appear-Y{
+  animation: 0.75s appearY forwards ;
+}
+.desappearY{
+  animation: 0.75s desappearY forwards;
+}
+
+.pg-loaging{
+  max-width: 100vw;
+  width: 100%;
+  height: 100vh;
+  background: rgba(30, 30, 30, 0.525);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pg-img{
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  border: 10px dotted var(--color-white2);
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: aniRotate 1s linear infinite;
+}
+.pg-h2{
+  margin-top: 1.25rem;
+  color: var(--color-white2);
+  font-size: var(--size-28);
+  font-weight: 400;
+  line-height: var(--height-36);
+}
